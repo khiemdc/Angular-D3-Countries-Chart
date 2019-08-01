@@ -28,5 +28,17 @@ app-vietnam-chart {
           border-radius: 5px;
           text-align: center;
         }
+
+        @media only screen and (max-width: 768px) {
+
+          .text {
+                font-family: sans-serif;
+                fill:brown;
+                // fill: #ffffff;
+                font-size: 12px;
+                text-anchor: middle;
+              }
+          
+          }
     }
   }

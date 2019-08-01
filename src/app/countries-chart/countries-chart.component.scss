@@ -24,6 +24,26 @@ app-countries-chart {
           // font-weight: bold;
         }
 
+        @media only screen and (max-width: 768px) {
+
+            .text {
+                  font-family: sans-serif;
+                  // fill:brown;
+                  fill: #ffffff;
+                  font-size: 10px;
+                  text-anchor: middle;
+                }
+                
+                .text2 {
+                  font-family: sans-serif;
+                  // fill:brown;
+                  fill: #ffffff;
+                  font-size: 10px;
+                }
+      
+             
+            }
+        
 
         .toolTip {
           position: absolute;
@@ -40,8 +60,7 @@ app-countries-chart {
     }
   }
 
-
-
+  
 
 
 

@@ -1,5 +1,5 @@
 app-countries-chart {
-    width: 85%;
+    width: 100%;
     height: 35em;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@ app-countries-chart {
 }
 
 app-china-chart {
-    width: 85%;
+    width: 100%;
     height: 35em;
     display: flex;
     align-items: center;
@@ -15,9 +15,27 @@ app-china-chart {
 }
 
 app-vietnam-chart {
-    width: 85%;
+    width: 100%;
     height: 35em;
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+@media only screen and (max-width: 768px) {
+
+    app-countries-chart {
+        width: 100%;
+        height: 20em;
+    }
+    
+    app-china-chart {
+        width: 100%;
+        height: 20em;
+    }
+    
+    app-vietnam-chart {
+        width: 100%;
+        height: 20em;
+    }
 }

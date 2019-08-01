@@ -83,7 +83,7 @@ export class CountriesChartComponent implements OnInit, OnChanges {
         .attr('x', contentWidth - (this.margin.right * 1.5))
         .attr('y', this.margin.bottom / 1.5)
         .attr('text-anchor', 'middle')
-        .text('Billet Candidate Count')
+        .text('Prisoners of Conscience')
         .attr('fill', 'black');
   
       // yAxis

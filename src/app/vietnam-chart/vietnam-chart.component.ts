@@ -95,7 +95,7 @@ private createVerticalBarchart(): void {
     .attr('x', contentWidth - (this.margin.right / 2))
     .attr('y', this.margin.bottom / 2)
     .attr('text-anchor', 'middle')
-    .text('Billet ID')
+    .text('Year')
     .attr('fill', 'black');
 
   // yAxis
@@ -109,7 +109,7 @@ private createVerticalBarchart(): void {
     .attr('dy', '0.71em')
     // .attr('text-anchor', 'end')
     .attr('text-anchor', 'middle')
-    .text('Time Elapsed')
+    .text('Prisoners of Conscience')
     .attr('fill', 'black');
 
   chart.selectAll('.bar')

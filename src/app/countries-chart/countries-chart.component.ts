@@ -63,7 +63,7 @@ export class CountriesChartComponent implements OnInit, OnChanges {
       const yScale = d3
         .scaleBand()
         .rangeRound([contentHeight, 0])
-        .padding(0.2)
+        .padding(0.3)
         .domain(data.map(d => d.Country));
   
       const xScale = d3.scaleLinear()

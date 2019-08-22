@@ -14,6 +14,14 @@ app-china-chart {
     justify-content: center
 }
 
+app-northkorea-chart {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 app-vietnam-chart {
     width: 100%;
     height: 35em;
@@ -30,6 +38,11 @@ app-vietnam-chart {
     }
     
     app-china-chart {
+        width: 100%;
+        height: 20em;
+    }
+
+    app-northkorea-chart {
         width: 100%;
         height: 20em;
     }

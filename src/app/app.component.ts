@@ -16,7 +16,8 @@ export class AppComponent implements OnInit {
   countryChart: boolean;
   vietnamChart: boolean;
   chinaChart: boolean;
-  charts = [{'country': 'All Countries'}, {'country': 'China'}, {'country': 'Vietnam'}];
+  northkoreaChart: boolean;
+  charts = [{'country': 'All Countries'}, {'country': 'China'}, {'country': 'North Korea'}, {'country': 'Vietnam'}];
 
   constructor(private chartService: ChartsService ) {
     // this.getBarchartData();
@@ -50,16 +51,25 @@ export class AppComponent implements OnInit {
         this.countryChart = true;
         this.vietnamChart = false;
         this.chinaChart = false;
+        this.northkoreaChart = false;
         }
     if (value === 'China') {
         this.countryChart = false;
         this.chinaChart = true;
+        this.vietnamChart = false;
+        this.northkoreaChart = false;
+        }
+    if (value === 'North Korea') {
+        this.countryChart = false;
+        this.northkoreaChart = true;
+        this.chinaChart = false;
         this.vietnamChart = false;
         }
     if (value === 'Vietnam') {
         this.countryChart = false;
         this.chinaChart = false;
         this.vietnamChart = true;
+        this.northkoreaChart = false;
         }
     // this.router.navigate(['../', value]);
 }

@@ -134,7 +134,7 @@ private createVerticalBarchart(): void {
         .style('left', d3.event.pageX - 50 + 'px')
         .style('top', d3.event.pageY - 70 + 'px')
         .style('display', 'inline-block')
-        .html('BilletId ' + (d.Year) + ': ' + (d.Prisoners) + ' Days');
+        .html('Year:  ' + (d.Year) + '<hr/>' + 'Prisoners of Conscience: ' + (d.Prisoners));
         })
     .on('mouseout', function(d) { tooltip.style('display', 'none'); } )
     .on('click', d => {

@@ -27,6 +27,12 @@ app-vietnam-chart {
           padding: 10px;
           border-radius: 5px;
           text-align: center;
+          pointer-events: none;
+        }
+
+        hr {
+            margin: 5px!important;
+            padding: 0!important;
         }
 
         @media only screen and (max-width: 768px) {

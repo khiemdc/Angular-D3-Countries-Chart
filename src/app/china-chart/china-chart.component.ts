@@ -15,29 +15,45 @@ export class ChinaChartComponent implements OnInit, OnChanges {
   @ViewChild('barChart') private chartContainer: ElementRef;
 
   margin = { top: 20, right: 20, bottom: 50, left: 40 };
-  // colors = ['#c6dbef', '#9ecae1', '#deebf7', '#9ecae1', '#6baed6', '#4292c6', '#2171b5',
-  //           '#08519c', '#08306b', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#deebf7',
-  //           '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#08519c', '#08306b', '#9ecae1'];
-  colors = d3.schemeCategory10;
+  colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf',
+              '#1f77b4', "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf",
+              '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd'];
+  // colors = d3.schemeCategory10;
 
   barchartData: IChinaData[];
 
   constructor() {
     this.barchartData = [
+      {Year: '2000', Prisoners: 2435},
+      {Year: '2001', Prisoners: 1000},
+      {Year: '2002', Prisoners: 5540},
+      {Year: '2003', Prisoners: 1350},
+      {Year: '2004', Prisoners: 3530},
+      {Year: '2005', Prisoners: 2435},
+      {Year: '2006', Prisoners: 1000},
+      {Year: '2007', Prisoners: 5540},
+      {Year: '2008', Prisoners: 7039},
+      {Year: '2009', Prisoners: 3530},
+      {Year: '2005', Prisoners: 2435},
+      {Year: '2006', Prisoners: 1000},
+      {Year: '2007', Prisoners: 5540},
+      {Year: '2008', Prisoners: 1350},
+      {Year: '2009', Prisoners: 3530},
       {Year: '2010', Prisoners: 1000},
       {Year: '2011', Prisoners: 2330},
       {Year: '2012', Prisoners: 4540},
-      {Year: '2013', Prisoners: 5550},
+      {Year: '2013', Prisoners: 1236},
       {Year: '2014', Prisoners: 1230},
       {Year: '2015', Prisoners: 4349},
-      {Year: '2016', Prisoners: 7039},
+      {Year: '2016', Prisoners: 5555},
       {Year: '2017', Prisoners: 4034},
-      {Year: '2018', Prisoners: 3035},
+      {Year: '2018', Prisoners: 6125},
       {Year: '2019', Prisoners: 2043}
     ];
     }
 
   ngOnInit() {
+    console.log(this.colors);
     console.log('data: ', this.barchartData);
     // Filter BilletCandidateCount = 0
     // this.barchartData = this.barchartData.filter(

@@ -23,6 +23,16 @@ export class VietnamChartComponent implements OnInit, OnChanges {
 
   constructor() {
     this.barchartData = [
+      {Year: '2000', Prisoners: 2435},
+      {Year: '2001', Prisoners: 1000},
+      {Year: '2002', Prisoners: 5540},
+      {Year: '2003', Prisoners: 1350},
+      {Year: '2004', Prisoners: 3530},
+      {Year: '2005', Prisoners: 2435},
+      {Year: '2006', Prisoners: 1000},
+      {Year: '2007', Prisoners: 5540},
+      {Year: '2008', Prisoners: 1350},
+      {Year: '2009', Prisoners: 3530},
       {Year: '2010', Prisoners: 1000},
       {Year: '2011', Prisoners: 2330},
       {Year: '2012', Prisoners: 4540},
